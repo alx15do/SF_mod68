@@ -13,6 +13,34 @@ footer {
 	text-align: center; 
 	border-top: 1px solid #ccc;
 	padding: 2em;
+	color: rgb(108, 117, 125);
+	font-family: 'Times New Roman', Times, serif; 	
 }
 
-nav ul li {list-style-type: none;}
+nav ul {margin:0;padding:0;}
+nav ul li {list-style-type: none; background-color: #046CAA; display: inline-block;}
+nav ul li a { color:white; text-decoration:none; padding: .2em 2em;display: inline-block;}
+
+input[type=submit] {
+	background-color: #046CAA;
+	border: 1px solid #046CAA;
+	color: white;
+	padding: .5em 1em;
+	text-decoration: none;
+	margin: .2em;
+	cursor: pointer;
+}
+
+input[type=text] {
+  padding: .5em 1em;
+  text-decoration: none;
+  margin: .2em;	
+}
+
+#duplicateField > span {
+	padding:1em;
+}
+
+#duplicateField > span.active {
+	background-color: #F0A71C;
+}

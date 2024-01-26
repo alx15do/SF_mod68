@@ -7,16 +7,20 @@
 
 
 const elem = document.querySelector('#inputForm');
-const out = document.querySelector('#duplicateField');
+const out = document.querySelector('#duplicateField > span');
 const elSubm = document.querySelector('#submitForm');
 //document.querySelector('#duplicateField').value = String.fromCharCode(event.charCode);
 
 
 elem.addEventListener('keyup', (event) => { 
-	//if (event.keypress) {
-	//	console.log('Key press');
-		out.textContent  = elem.value;
-	//}
+
+	out.classList.add('active');
+	out.textContent  = elem.value;
+	
+	if (out.textContent=="") {
+		out.classList.remove('active');
+	}
+
 
 });
 
@@ -27,6 +31,7 @@ elSubm.addEventListener('click', () => {
 	if (event.which === 1) {
 		event.preventDefault();
 		let consTxt = console.log("Вывод в консоль после нажатия левой кнопки: "+out.textContent);
+		out.classList.remove('active');
 		out.textContent = "";
 		elem.value = "";	
 	}
