@@ -1,0 +1,18 @@
+h1 {text-align: center;}
+
+
+
+header {
+	border-bottom: 1px solid #ccc
+}
+
+main {
+	padding:2em 0;
+}
+footer {
+	text-align: center; 
+	border-top: 1px solid #ccc;
+	padding: 2em;
+}
+
+nav ul li {list-style-type: none;}
