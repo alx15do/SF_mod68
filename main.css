@@ -9,10 +9,15 @@ header {
 main {
 	padding:2em 0;
 }
+
+main, header, footer {
+	width:80%;
+	margin:0 auto;
+}
+
 footer {
 	text-align: center; 
 	border-top: 1px solid #ccc;
-	padding: 2em;
 	color: rgb(108, 117, 125);
 	font-family: 'Times New Roman', Times, serif; 	
 }
@@ -43,4 +48,22 @@ input[type=text] {
 
 #duplicateField > span.active {
 	background-color: #F0A71C;
+}
+
+a.link {
+	display:inline-block;
+}
+
+a.link.changed {
+	color: green;
+}
+
+
+code {
+	background-color: #ddd;
+	padding: .5em 1em;
+}
+
+#consoleLog, #alert, #prompt {
+	margin-top:2em;
 }

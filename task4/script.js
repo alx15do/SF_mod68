@@ -5,6 +5,7 @@ elem.addEventListener('click',
     event.preventDefault();
     const userText = prompt('Введите наименование ссылки');
 	elem.textContent = userText;
+	elem.classList.add('changed');
 	console.log('Текст ссылки изменён на', userText);    
 });
 
