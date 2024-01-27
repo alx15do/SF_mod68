@@ -19,7 +19,8 @@ footer {
 	text-align: center; 
 	border-top: 1px solid #ccc;
 	color: rgb(108, 117, 125);
-	font-family: 'Times New Roman', Times, serif; 	
+	font-family: 'Times New Roman', Times, serif;
+	padding-top:2em;
 }
 
 nav ul {margin:0;padding:0;}

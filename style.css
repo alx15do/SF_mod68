@@ -1,0 +1,13 @@
+ul.soderzhanie li {
+	font-size:1.5em;
+	line-heihgt:2em;
+}
+
+ul.soderzhanie li a {
+	text-decoration: none;
+}
+
+ul.soderzhanie li a:hover {
+	text-decoration: underline;
+	color: green;
+}
